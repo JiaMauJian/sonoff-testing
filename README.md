@@ -13,4 +13,6 @@
 3. 請志揚幫忙接中間那條[黑線](https://projetsdiy.fr/wp-content/uploads/2017/09/sonoff-4ch-pro-esp8285-flash-mode.jpg)，GND接到晶片上方的第二隻腳，然後就...接12V電壓器的電源，3秒後放開就可以開始燒錄
 
 # 如何用手機測試sonoff
-  cmnd/sonoff/power on (%topic%預設是sonoff可以改成其他名稱，避免控制到所有都叫sonoff的裝置)，https://github.com/arendst/Sonoff-MQTT-OTA-Arduino/wiki/MQTT-Features
+
+1. cmnd/sonoff/power on (%topic%預設是sonoff可以改成其他名稱，避免控制到所有都叫sonoff的裝置)，https://github.com/arendst/Sonoff-MQTT-OTA-Arduino/wiki/MQTT-Features
+2. [手機畫面1](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%201.png?raw=true)，[手機畫面2](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%202.png?raw=true)
