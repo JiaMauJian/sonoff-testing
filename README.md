@@ -17,6 +17,9 @@
 2. 左下角要接3隻腳(TX, RX, GND)，這裡要注意的是TX接TX，RX接RX，不要懷疑[Normally, we have to reverse the jumpers between RX and TX but this is not the case on most Sonoff products because there is a misregistration on a PCB. Try first without reversing. If that does not work, reverse RX / TX](https://diyprojects.io/hack-sonoff-4ch-pro-firmware-mqtt-tasmota-inclusion-domoticz/#.Wksh51WWaM8)
 3. 請志揚幫忙接中間那條[黑線](https://projetsdiy.fr/wp-content/uploads/2017/09/sonoff-4ch-pro-esp8285-flash-mode.jpg)，GND接到晶片上方的第二隻腳，然後就...接12V電壓器的電源，3秒後放開就可以開始燒錄
 
+# sonoff 4ch pro GPIO Location
+[Here](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20pro%204ch%20GPIO.jpg?raw=true)
+
 # 如何用手機測試sonoff
 
 1. cmnd/sonoff/power on (%topic%預設是sonoff可以改成其他名稱，避免控制到所有都叫sonoff的裝置)，https://github.com/arendst/Sonoff-MQTT-OTA-Arduino/wiki/MQTT-Features
