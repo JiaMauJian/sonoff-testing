@@ -32,4 +32,23 @@
 2. [手機畫面1](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%201.png?raw=true)，[手機畫面2](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%202.png?raw=true)
 
 # 如何把Arduino的Output餵給Sonoff當input
- - 起因需要讀取鐵捲門控制箱的燈號[百業 BT-FD101]()
+ - 起因需要讀取鐵捲門控制箱的燈號(CNT4)[百業 BT-FD101](https://github.com/JiaMauJian/sonoff-testing/blob/master/bt-fd101%20fast%20rolling%20door%20of%20control%20receiver%20function%20operation%20manual.pdf)
+ - 先拿Sonoff Basic測試
+ - 將Arduino Uno Pin13設定為OUTPUT，每0.5秒閃一次
+ - 改Sonoff-Tasmota-5.10.0 sonoff.ino程式，將Sonoff Pin14設定為INPUT，狀態有變就輸出 [程式]()
+ ```
+ ...
+  pinMode(gpio_test_pin, INPUT);
+ ...
+  // 狀態有改變再輸出
+  if (digitalRead(gpio_test_pin) == HIGH && pre_gpio_test_pin_state == 0)
+  {
+    pre_gpio_test_pin_state = 1;
+    Serial.println(1);    
+  }
+  if (digitalRead(gpio_test_pin) == LOW  && pre_gpio_test_pin_state == 1)
+  {
+    pre_gpio_test_pin_state = 0;
+    Serial.println(0);    
+  }
+```
