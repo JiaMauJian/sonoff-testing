@@ -1,3 +1,8 @@
+# user_config.h更新沒反應
+
+1. 需修改user_config.h中的CFG_HOLDER的值(跟之前燒錄的不一樣即可)
+2. [#define STA_SSID2 not recognised](https://github.com/arendst/Sonoff-Tasmota/issues/376)
+
 # sonoff flash
 
 1. [如何改firmware](http://blog.rniemand.com/changing-sonoff-firmware-visual-guide/)，其中要注意這一段話，NOTE: To put the Sonoff into flash mode you will need to hold down the power switch while powering it on!若要進入燒錄模式，先按下Sonoff的按鈕後再插USB燒錄線
