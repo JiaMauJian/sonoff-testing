@@ -19,7 +19,7 @@
 
 # GPIO Location
  * [sonoff 4ch pro ](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20pro%204ch%20GPIO.jpg?raw=true)
- * [sonoff basic](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20basic%20GPIO.jpg?raw=true)
+ * [sonoff basic](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20basic%20GPIO%20Location.jpg?raw=true)
 
 # 如何用手機測試sonoff
 
