@@ -35,7 +35,7 @@
  - 起因需要讀取鐵捲門控制箱的燈號(CNT4)[百業 BT-FD101](https://github.com/JiaMauJian/sonoff-testing/blob/master/bt-fd101%20fast%20rolling%20door%20of%20control%20receiver%20function%20operation%20manual.pdf)
  - 先拿Sonoff Basic測試
  - 將Arduino Uno Pin13設定為OUTPUT，每0.5秒閃一次
- - 改Sonoff-Tasmota-5.10.0 sonoff.ino程式，將Sonoff Pin14設定為INPUT，狀態有變就輸出 [程式]()
+ - 改Sonoff-Tasmota-5.10.0 sonoff.ino程式，將Sonoff Pin14設定為INPUT，狀態有變就輸出 [程式](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff_%E6%94%B9GPIO%E6%B8%AC%E8%A9%A6.ino)
  ```
  ...
   pinMode(gpio_test_pin, INPUT);
