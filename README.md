@@ -21,7 +21,12 @@
  * [sonoff 4ch pro ](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20pro%204ch%20GPIO.jpg?raw=true)
  * [sonoff basic](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20basic%20GPIO%20Location.jpg?raw=true)
 
-# 如何用手機測試sonoff
+# MQTT-Sonoff devices
+ * tele -> Sonoff devices publish
+ * stat -> Sonoff devices publish
+ * cmnd -> Sonoff devices subscribe
+ 
+# MQTT-如何用手機測試sonoff
 
 1. cmnd/sonoff/power on (%topic%預設是sonoff可以改成其他名稱，避免控制到所有都叫sonoff的裝置)，https://github.com/arendst/Sonoff-MQTT-OTA-Arduino/wiki/MQTT-Features
 2. [手機畫面1](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%201.png?raw=true)，[手機畫面2](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%202.png?raw=true)
