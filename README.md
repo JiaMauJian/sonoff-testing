@@ -4,6 +4,17 @@
 00:00:33 WIF: Connecting to AP2 ooxx157 in mode 11N as sonoff-4681...
 00:00:40 WIF: Connect failed as AP cannot be reached
 00:00:40 WIF: WPSConfigactive for 1 minute
+00:00:59 APP: Restarting
+
+ ets Jan  8 2013,rst cause:1, boot mode:(3,5)
+
+load 0x4010f000, len 1384, room 16 
+tail 8
+chksum 0x2d
+csum 0x2d
+v4ceabea9
+~ld
+
 ```
 
 # user_config.h更新沒反應
