@@ -1,0 +1,5 @@
+hbmqtt_pub --url mqtt://192.168.0.50 -t domoticz/in -m "{""idx"":28, ""nvalue"":0, ""svalue"":""8989""}"
+
+hbmqtt_pub --url mqtt://192.168.0.50 -t test/ -m "Allen Testing"
+hbmqtt_sub --url mqtt://localhost -t test/#
+hbmqtt
