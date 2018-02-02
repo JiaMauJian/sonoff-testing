@@ -1,3 +1,11 @@
+# sonoff Wifi會斷斷續續
+應該是焊壞了[Wifi stops working](https://github.com/arendst/Sonoff-Tasmota/wiki/Troubleshooting)
+```
+00:00:33 WIF: Connecting to AP2 ooxx157 in mode 11N as sonoff-4681...
+00:00:40 WIF: Connect failed as AP cannot be reached
+00:00:40 WIF: WPSConfigactive for 1 minute
+```
+
 # user_config.h更新沒反應
 
 1. 需修改user_config.h中的CFG_HOLDER的值(跟之前燒錄的不一樣即可)
