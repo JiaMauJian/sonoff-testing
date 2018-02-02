@@ -71,3 +71,34 @@ v4ceabea9
     Serial.println(0);    
   }
 ```
+
+# 送訊息給Domoticz (MQTT)
+```
+char msg_gpio_test_pin[50];
+...
+void loop()
+{
+  ...
+  // 狀態有改變再輸出
+  if (digitalRead(gpio_test_pin) == HIGH && pre_gpio_test_pin_state == 0)
+  {
+    pre_gpio_test_pin_state = 1;
+    Serial.println(1);    
+    snprintf (msg_gpio_test_pin, 50, "{\"idx\":28, \"nvalue\":0, \"svalue\":\"1\"}");
+    Serial.print("Publish message for msg_gpio_test_pin: ");
+    Serial.println(msg_gpio_test_pin);
+    MqttClient.publish("domoticz/in", msg_gpio_test_pin);
+  }
+  if (digitalRead(gpio_test_pin) == LOW  && pre_gpio_test_pin_state == 1)
+  {
+    pre_gpio_test_pin_state = 0;
+    Serial.println(0);
+    snprintf (msg_gpio_test_pin, 50, "{\"idx\":28, \"nvalue\":0, \"svalue\":\"0\"}");
+    Serial.print("Publish message for msg_gpio_test_pin: ");
+    Serial.println(msg_gpio_test_pin);
+    MqttClient.publish("domoticz/in", msg_gpio_test_pin);
+  }
+
+  ...
+}
+```
