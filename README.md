@@ -19,6 +19,8 @@ v4ceabea9
 
 # user_config.h更新沒反應
 
+2019/7/15 新版tasmota即可用網頁設定Wifi不用改user_config.h
+
 1. 需修改user_config.h中的CFG_HOLDER的值(跟之前燒錄的不一樣即可)
 2. [#define STA_SSID2 not recognised](https://github.com/arendst/Sonoff-Tasmota/issues/376)
 
