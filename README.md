@@ -31,9 +31,8 @@ v4ceabea9
 
 # sonoff 4ch pro flash
 
-1. 同上面sonoff basic的tasmota source code
-2. 左下角要接3隻腳(TX, RX, GND)，這裡要注意的是TX接TX，RX接RX，不要懷疑[Normally, we have to reverse the jumpers between RX and TX but this is not the case on most Sonoff products because there is a misregistration on a PCB. Try first without reversing. If that does not work, reverse RX / TX](https://diyprojects.io/hack-sonoff-4ch-pro-firmware-mqtt-tasmota-inclusion-domoticz/#.Wksh51WWaM8)
-3. 請志揚幫忙接中間那條[黑線](https://projetsdiy.fr/wp-content/uploads/2017/09/sonoff-4ch-pro-esp8285-flash-mode.jpg)，GND接到晶片上方的第二隻腳，然後就...接12V電壓器的電源，3秒後放開就可以開始燒錄
+1. USB燒錄線和板子接線 3.3V <-> 3.3V, TX <-> RX, RX <-> TX, GND <-> GND
+2. 請志揚幫忙接中間那條[黑線](https://projetsdiy.fr/wp-content/uploads/2017/09/sonoff-4ch-pro-esp8285-flash-mode.jpg)，GND接到晶片上方的第二隻腳，USB燒路線插上去，3秒後放開就可以開始燒錄
 
 # GPIO Location
  * [sonoff 4ch pro ](https://github.com/JiaMauJian/sonoff-testing/blob/master/sonoff%20pro%204ch%20GPIO.jpg?raw=true)
@@ -50,6 +49,7 @@ v4ceabea9
 2. [手機畫面1](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%201.png?raw=true)，[手機畫面2](https://github.com/JiaMauJian/sonoff-testing/blob/master/MQTT%20Client%202.png?raw=true)
 
 # 如何把Arduino的Output餵給Sonoff當input
+ - 2019/7/15 不用那麼麻煩寫程式了，只要用把sonoff 4ch pro的GPIO設定成Counter當Input訊號即可。
  - 起因需要讀取鐵捲門控制箱的燈號(CNT4)[百業 BT-FD101](https://github.com/JiaMauJian/sonoff-testing/blob/master/bt-fd101%20fast%20rolling%20door%20of%20control%20receiver%20function%20operation%20manual.pdf)
  - 先拿Sonoff Basic測試
  - 將Arduino Uno Pin13設定為OUTPUT，每0.5秒閃一次
